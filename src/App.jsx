@@ -13,6 +13,7 @@ import OneTweet from './Onetweet'
 import Setting from './Setting'
 import Onsitting from './Onsitting'
 import Followers from './Followers'
+import Private from './Private'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -261,6 +262,7 @@ function App() {
           <Myicones name="Profil" src="src/assets/Profile-Fill.svg" />
           <Myicones name="More" src="src/assets/More-2.svg" />
           <Mybutton />
+          <Private classes="pt-24" clase="w-8" src="src/assets/dan.jpeg" name="The News York Times" srce="src/assets/Private.svg" set="src/assets/More-2.svg" />
         </div>
       </div>
       <div className='border-x w-1/3 border-slate-800'>
@@ -307,14 +309,14 @@ function App() {
               <img src="src/assets/Settings.svg" alt="" />
             </div>
             <Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More.svg" />
+            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
             <Onsitting name="#SQUID" names="2,066 twetts" />
             <Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More.svg" />
+            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
             <Onsitting name="#SQUID" names="2,066 twetts" /><Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More.svg" />
+            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
             <Onsitting name="#SQUID" names="2,066 twetts" /><Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More.svg" />
+            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
             <Onsitting name="#SQUID" names="2,066 twetts" />
             <button><strong className='text-blue-400'>Show more</strong></button>
           </div>
@@ -327,7 +329,7 @@ function App() {
             </div>
             <div className='mt-3'>
               <Followers src="src/assets/Profile-Photo(1).svg" name="The News York Times" srce="src/assets/Verified.svg" names="@nytimes" nam="Follow" />
-            <button className='mt-3'><strong className='text-blue-400'>Show more</strong></button>
+              <button className='mt-3'><strong className='text-blue-400'>Show more</strong></button>
             </div>
           </div>
         </div>

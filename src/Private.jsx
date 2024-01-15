@@ -1,4 +1,4 @@
-export default function Followers(props) {
+export default function Private(props) {
     return (
         <div className={props.classes} >
             <div className="flex justify-between">
@@ -8,7 +8,6 @@ export default function Followers(props) {
                     <small>{props.names} </small>
                 </div>
                 <img src={props.set} />
-                <button className="bg-white w-24 ml-3 rounded-3xl text-black">{props.nam}</button>
             </div>
         </div>
     )
