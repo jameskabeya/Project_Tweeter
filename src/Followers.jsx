@@ -1,11 +1,13 @@
-export default function Followers(props){
-    return(
+export default function Followers(props) {
+    return (
         <div>
-            <div className="flex ">
-                <img src={props.src} alt={props.alt} />
-                <small>{props.names} </small>
-                <p><strong>{props.name}</strong></p>
-                <button className="bg-white color-black">{props.nam}</button>
+            <div className="flex justify-between">
+            <img src={props.src} alt={props.alt} />
+                <div className="ml-3">
+                    <p className="flex"><strong>{props.name}</strong><img src={props.srce} alt="image" /></p>
+                    <small>{props.names} </small>
+                </div>
+                <button className="bg-white w-24 ml-3 rounded-3xl text-black">{props.nam}</button>
             </div>
         </div>
     )

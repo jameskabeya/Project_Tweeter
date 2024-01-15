@@ -251,7 +251,7 @@ function App() {
   return (
     <div className='flex justify-center m-auto'>
       <div className='text-white pt-5 w-1/3'>
-        <div className='fixed ml-24'>
+        <div id='Container_navbar' className='fixed '>
           <Myicones name="Font" src="src/assets/Twitter.svg" />
           <Myicones name="Home" src="src/assets/Home-Fill.svg" />
           <Myicones name="Notifications" src="src/assets/Explore.svg" />
@@ -266,7 +266,7 @@ function App() {
       <div className='border-x w-1/3 border-slate-800'>
         <div>
           <div>
-            <div className='text-white flex w-full p-3  justify-between'>
+            <div className='text-white flex w-full p-3 justify-between'>
               <h2 className='font-bold'>Home</h2>
               <Allimage src="src/assets/Timeline-Prop.svg" alt="Image" />
             </div>
@@ -319,9 +319,16 @@ function App() {
             <button><strong className='text-blue-400'>Show more</strong></button>
           </div>
           <div className='bg-gray-900 pt-10 rounded-3xl mt-8 p-3'>
-            <Followers src="src/assets/Profile-Photo(2).svg" name="The News York Times" names="@nytimes" nam="Follow" />
-            <Followers src="src/assets/Profile-Photo.svg" name="The News York Times" names="@nytimes" nam="Follow" />
-            <Followers src="src/assets/Profile-Photo(1).svg" name="The News York Times" names="@nytimes" nam="Follow" />
+            <div>
+              <Followers src="src/assets/Profile-Photo(2).svg" name="The News York Times" srce="src/assets/Verified.svg" names="@nytimes" nam="Follow" />
+            </div>
+            <div className='mt-3'>
+              <Followers src="src/assets/Profile-Photo.svg" name="The News York Times" srce="src/assets/Verified.svg" names="@nytimes" nam="Follow" />
+            </div>
+            <div className='mt-3'>
+              <Followers src="src/assets/Profile-Photo(1).svg" name="The News York Times" srce="src/assets/Verified.svg" names="@nytimes" nam="Follow" />
+            <button className='mt-3'><strong className='text-blue-400'>Show more</strong></button>
+            </div>
           </div>
         </div>
       </div>
