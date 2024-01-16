@@ -262,7 +262,7 @@ function App() {
           <Myicones name="Profil" src="src/assets/Profile-Fill.svg" />
           <Myicones name="More" src="src/assets/More-2.svg" />
           <Mybutton />
-          <Private classes="pt-24" clase="w-10 rounded-3xl" src="src/assets/dan.jpeg" name="The News York Times" srce="src/assets/Private.svg" set="src/assets/More-2.svg" />
+          <Private clase="w-10 rounded-3xl" src="src/assets/dan.jpeg" name="The News York Times" srce="src/assets/Private.svg" set="src/assets/More-2.svg" />
         </div>
       </div>
       <div className='border-x w-1/3 border-slate-800'>
@@ -300,10 +300,10 @@ function App() {
 
       <div className='w-1/3 text-white p-3'>
         <div className='fixed'>
-          <div className='border-boundell max-w-xs'>
+          <div className='border-boundell min-w-0'>
             <Search />
           </div>
-          <div className='bg-gray-900 max-w-xs rounded-3xl mt-8 p-5'>
+          <div className='bg-gray-900 min-w-full rounded-3xl mt-8 p-5'>
             <div className='flex justify-between'>
               <p><strong>TRENDS FOR YOU</strong></p>
               <img src="src/assets/Settings.svg" alt="" />
