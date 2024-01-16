@@ -262,7 +262,7 @@ function App() {
           <Myicones name="Profil" src="src/assets/Profile-Fill.svg" />
           <Myicones name="More" src="src/assets/More-2.svg" />
           <Mybutton />
-          <Private classes="pt-24" clase="w-8" src="src/assets/dan.jpeg" name="The News York Times" srce="src/assets/Private.svg" set="src/assets/More-2.svg" />
+          <Private classes="pt-24" clase="w-10 rounded-3xl" src="src/assets/dan.jpeg" name="The News York Times" srce="src/assets/Private.svg" set="src/assets/More-2.svg" />
         </div>
       </div>
       <div className='border-x w-1/3 border-slate-800'>
