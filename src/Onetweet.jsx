@@ -5,8 +5,13 @@ import { useState } from "react";
 export default function OneTweet({ MyTweet }) {
 
     const [Click, setclick] = useState(0)
-    const handlerComent = () =>{
+    const handlerLike = () =>{
         setclick(Click +1)
+    }
+
+    const [count, setCount] = useState()
+    const handlerComent = () =>{
+        setCount(count )
     }
     // const [Tweet, setTweet] = useState(){
     //     const handlerRetweet = () =>{
@@ -46,10 +51,10 @@ export default function OneTweet({ MyTweet }) {
                 <Paraph name={MyTweet.text} />
                 <img className='pt-2 rounded-3xl w-full object-cover h-60' src={MyTweet.image} alt="Image" />
                 <div className='flex pt-5 justify-between'>
-                    <Myicoment onClick={handlerComent} src="src/assets/Reply.svg" >{Click}</Myicoment>
+                    <Myicoment src="src/assets/Reply.svg" name={MyTweet.replies} ></Myicoment>
                     <p></p>
-                    <Myicoment src="src/assets/Retweet.svg" name={MyTweet.retweets} />
-                    <Myicoment src="src/assets/React.svg" name={MyTweet.favorites} />
+                    <Myicoment onClick={handlerComent} src="src/assets/Retweet.svg" name={MyTweet.retweets} />
+                    <Myicoment onClick={handlerLike} claces="hover:text-red-500" src="src/assets/React.svg">{Click}</Myicoment>
                     <Myicoment src="src/assets/Share.svg" name="" />
                 </div>
             </div>
