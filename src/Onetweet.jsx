@@ -1,7 +1,19 @@
 import Paraph from "./assets/Paraph"
 import Myicoment from "./assets/Myicoment"
 import Small from "./assets/Small";
+import { useState } from "react";
 export default function OneTweet({ MyTweet }) {
+
+    const [Click, setclick] = useState(0)
+    const handlerComent = () =>{
+        setclick(Click +1)
+    }
+    // const [Tweet, setTweet] = useState(){
+    //     const handlerRetweet = () =>{
+    //         Tweet(setTweet "red")
+    //     }
+    // }
+
     { console.log(); }
     const object = {
 
@@ -34,7 +46,7 @@ export default function OneTweet({ MyTweet }) {
                 <Paraph name={MyTweet.text} />
                 <img className='pt-2 rounded-3xl w-full object-cover h-60' src={MyTweet.image} alt="Image" />
                 <div className='flex pt-5 justify-between'>
-                    <Myicoment src="src/assets/Reply.svg" name={MyTweet.replies} />
+                    <Myicoment onClick={handlerComent} src="src/assets/Reply.svg" >{Click}</Myicoment>
                     <p></p>
                     <Myicoment src="src/assets/Retweet.svg" name={MyTweet.retweets} />
                     <Myicoment src="src/assets/React.svg" name={MyTweet.favorites} />
