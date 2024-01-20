@@ -5,15 +5,19 @@ import { useState } from "react";
 export default function OneTweet({ MyTweet }) {
 
     const [Click, setclick] = useState(0)
-    const handlerLike = () =>{
-        setclick(Click +1)
+    const handlerLike = () => {
+        if (Click % 2 === 0) {
+            setclick(Click + 1)
+        }else{
+            setclick(Click -1)
+        }
     }
 
     const [count, setCount] = useState()
-    const handlerComent = () =>{
-        setCount(count )
+    const handlerComent = () => {
+        setCount(count)
     }
-  
+
     { console.log(); }
     const object = {
 
