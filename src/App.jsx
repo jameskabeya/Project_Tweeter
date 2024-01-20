@@ -14,7 +14,11 @@ import Setting from './Setting'
 import Onsitting from './Onsitting'
 import Followers from './Followers'
 import Private from './Private'
-import { Routes, Route, Link} from 'react-router-dom'
+import Profil from './Profil'
+import Timeline from './Timeline'
+import Siderbar from './Siderbar'
+import Trendline from './Trendline'
+import Homeline from './Homeline'
 
 
 function App() {
@@ -252,91 +256,20 @@ function App() {
   ]
 
   return (
-    <div className='flex justify-center m-auto'>
-      <div className='text-white pt-5 w-1/3'>
-        <div id='Container_navbar' className='fixed '>
-          <Myicones name="Font" src="src/assets/Twitter.svg"/>
-          <Myicones to='/' name="Home" src="src/assets/Home-Fill.svg" />
-          <Myicones to='/notifications' name="Notifications" src="src/assets/Explore.svg" />
-          <Myicones to='/Messages' name="Messages" src="src/assets/Notifications-Fill.svg" />
-          <Myicones to='/Bookmarks' name="Bookmarks" src="src/assets/Bookmarks-Fill.svg" />
-          <Myicones to='/Lists' name="Lists" src="/src/assets/Lists-Fill.svg" />
-          <Myicones to='/profil' name="Profil" src="src/assets/Profile-Fill.svg" />
-          <Myicones to='/Profil' name="More" src="src/assets/More-2.svg" />
-          <Mybutton to='/Tweet' />
-          <Private to='/The News York Times' clase="w-10 rounded-3xl" src="src/assets/dan.jpeg" name="The News York Times" srce="src/assets/Private.svg" set="src/assets/More-2.svg" />
-        </div>
-      </div>
-      <div className='border-x w-1/3 border-slate-800'>
+
+    <div className='border-x w-1/3 border-slate-800'>
+      <div>
         <div>
-          <div>
-            <div className='text-white flex w-full p-3 justify-between'>
-              <h2 className='font-bold'>Home</h2>
-              <Allimage src="src/assets/Timeline-Prop.svg" alt="Image" />
-            </div>
-          </div>
-          <div className='pt-5 p-2 border-y border-slate-800  text-white '>
-            <div className='flex sticky top-0'>
-              <Allimage src="src/assets/Profile-Fill.svg" alt="Images du jour" />
-              <textarea className='bg-black text-silver resize-none' placeholder='Whats happening' name="" id="" cols="50" rows="1"></textarea>
-            </div>
-            <div className=' flex justify-between'>
-              <div className='flex gap-3 pt-8'>
-                <All_icones src="src/assets/Media.svg" />
-                <All_icones src="src/assets/Gif.svg" />
-                <All_icones src="src/assets/Poll.svg" />
-                <All_icones src="src/assets/Emoji.svg" />
-                <All_icones src="src/assets/Schedule.svg" />
-              </div>
-              <div className='pt-8'>
-                <button className=' rounded-full w-20 bg-blue-500'>Tweet</button>
-              </div>
-            </div>
-          </div>
+          <Homeline />
         </div>
-        {
-          tabs.map((tab) => <OneTweet MyTweet={tab} />)
-        }
-
+        <Timeline />
       </div>
+      {
+        tabs.map((tab) => <OneTweet MyTweet={tab} />)
+      }
 
-      <div className='w-1/3 text-white p-3'>
-        <div className='fixed'>
-          <div className='border-boundell min-w-0'>
-            <Search />
-          </div>
-          <div className='bg-gray-900 min-w-full rounded-3xl mt-8 p-5'>
-            <div className='flex justify-between'>
-              <p><strong>TRENDS FOR YOU</strong></p>
-              <img src="src/assets/Settings.svg" alt="" />
-            </div>
-            <Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
-            <Onsitting name="#SQUID" names="2,066 twetts" />
-            <Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
-            <Onsitting name="#SQUID" names="2,066 twetts" /><Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
-            <Onsitting name="#SQUID" names="2,066 twetts" /><Myicones name="" src="" />
-            <Setting name="Trinding in Terky" src="src/assets/More-2.svg" />
-            <Onsitting name="#SQUID" names="2,066 twetts" />
-            <button><strong className='text-blue-400'>Show more</strong></button>
-          </div>
-          <div className='bg-gray-900 pt-10 rounded-3xl mt-8 p-3'>
-            <div>
-              <Followers src="src/assets/Profile-Photo(2).svg" name="The News York Times" srce="src/assets/Verified.svg" names="@nytimes" nam="Follow" />
-            </div>
-            <div className='mt-3'>
-              <Followers src="src/assets/Profile-Photo.svg" name="The News York Times" srce="src/assets/Verified.svg" names="@nytimes" nam="Follow" />
-            </div>
-            <div className='mt-3'>
-              <Followers src="src/assets/Profile-Photo(1).svg" name="The News York Times" srce="src/assets/Verified.svg" names="@nytimes" nam="Follow" />
-              <button className='mt-3'><strong className='text-blue-400'>Show more</strong></button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+
   )
 }
 

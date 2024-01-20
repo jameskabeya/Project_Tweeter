@@ -13,12 +13,7 @@ export default function OneTweet({ MyTweet }) {
     const handlerComent = () =>{
         setCount(count )
     }
-    // const [Tweet, setTweet] = useState(){
-    //     const handlerRetweet = () =>{
-    //         Tweet(setTweet "red")
-    //     }
-    // }
-
+  
     { console.log(); }
     const object = {
 
