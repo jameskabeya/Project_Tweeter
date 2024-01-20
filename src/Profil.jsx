@@ -1,7 +1,7 @@
 import Homeline from "./Homeline"
 export default function Profil(props) {
     return (
-        <div className="w-1/3 text-white border-x border-b">
+        <div className="w-1/3 text-white border-x border-slate-800 border-b">
             <div>
 
             </div>
@@ -33,7 +33,7 @@ export default function Profil(props) {
                 <button><strong>Media</strong></button>
                 <button><strong>Likes</strong></button>
             </div>
-            <div className="border-t h-60">
+            <div className="border-t border-slate-800 h-60">
                 <div>
                     <h2><strong>Let’s get you set up</strong></h2>
                 </div>
@@ -65,7 +65,7 @@ export default function Profil(props) {
                     </div>
                 </div>
             </div>
-            <div className="border-t">
+            <div className="border-t border-slate-800">
                 <div>
                     <p><strong>Who to Fallow</strong></p>
                 </div>
