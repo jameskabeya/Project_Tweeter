@@ -9,6 +9,7 @@ import Notification from './Profil.jsx'
 import Siderbar from './Siderbar.jsx'
 import Trendline from './Trendline.jsx'
 import Homeline from './Homeline.jsx'
+import Message from './Message.jsx'
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -21,6 +22,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/profil",
+        element: <Notification />,
+      },
+      {
+        path: "/Messages",
+        element: <Message />,
+      },
+      {
+        path: "/Messages",
+        element: <Notification />,
+      },
+      {
+        path: "/Messages",
+        element: <Notification />,
+      },
+      {
+        path: "/Messages",
         element: <Notification />,
       },
     ],

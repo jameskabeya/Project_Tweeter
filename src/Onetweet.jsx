@@ -13,10 +13,10 @@ export default function OneTweet({ MyTweet }) {
         }
     }
 
-    const [count, setCount] = useState()
-    const handlerComent = () => {
-        setCount(count)
-    }
+    const [color, setColor] = useState('red');
+    const handlerColor = () => {
+        setColor('blue');
+    };
 
     { console.log(); }
     const object = {
@@ -50,13 +50,14 @@ export default function OneTweet({ MyTweet }) {
                 <Paraph name={MyTweet.text} />
                 <img className='pt-2 rounded-3xl w-full object-cover h-60' src={MyTweet.image} alt="Image" />
                 <div className='flex pt-5 justify-between'>
-                    <Myicoment src="src/assets/Reply.svg" name={MyTweet.replies} ></Myicoment>
+                    <Myicoment onClick={handlerColor} style={{ backgroundColor: color }} src="src/assets/Reply.svg" name={MyTweet.replies} ></Myicoment>
                     <p></p>
-                    <Myicoment onClick={handlerComent} src="src/assets/Retweet.svg" name={MyTweet.retweets} />
-                    <Myicoment onClick={handlerLike} claces="hover:text-red-500" src="src/assets/React.svg">{Click}</Myicoment>
+                    <Myicoment onMouseOver={handlerColor} style={{ backgroundColor: color }} src="src/assets/Retweet.svg" name={MyTweet.retweets} />
+                    <Myicoment onClick={handlerLike} style={{ backgroundColor: color }} claces="hover:text-red-500" src="src/assets/React.svg">{Click}</Myicoment>
                     <Myicoment src="src/assets/Share.svg" name="" />
                 </div>
             </div>
         </div>
     )
 }
+
