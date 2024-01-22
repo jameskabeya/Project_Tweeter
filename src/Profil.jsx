@@ -1,4 +1,5 @@
 import Homeline from "./Homeline"
+import Who_Follow from "./Whoto_Follow"
 export default function Profil(props) {
     return (
         <div className="w-1/3 text-white border-x border-slate-800 border-b">
@@ -69,6 +70,13 @@ export default function Profil(props) {
                 <div>
                     <p><strong>Who to Fallow</strong></p>
                 </div>
+            </div>
+            <div>
+                <div className="flex p-3 gap-2">
+                    <img src="src/assets/Profile-Fill.svg" alt="" />
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+                <Who_Follow src="src/assets/dan.jpeg" name="HORIZON 24" names="Horizon_24" paraph="compte profesionnel du site informatique Generale en R D Congo et dans le monde. Horizon_24 l'information c'est chaque jour"/>
             </div>
         </div>
 

@@ -49,12 +49,16 @@ export default function OneTweet({ MyTweet }) {
                 <h2 className="flex">{MyTweet.source} <Small name={MyTweet.date} src="src/assets/Verified.svg" /></h2>
                 <Paraph name={MyTweet.text} />
                 <img className='pt-2 rounded-3xl w-full object-cover h-60' src={MyTweet.image} alt="Image" />
-                <div className='flex pt-5 justify-between'>
-                    <Myicoment onClick={handlerColor} style={{ backgroundColor: color }} src="src/assets/Reply.svg" name={MyTweet.replies} ></Myicoment>
+                <div className='flex pt-5 relative justify-between'>
+                    <Myicoment onClick={handlerColor} absolute inset-0 bg-blue-500 opacity-0 hover:opacity-100 style={{ backgroundColor: color }} src="src/assets/Reply.svg" name={MyTweet.replies} ></Myicoment>
                     <p></p>
-                    <Myicoment onMouseOver={handlerColor} style={{ backgroundColor: color }} src="src/assets/Retweet.svg" name={MyTweet.retweets} />
-                    <Myicoment onClick={handlerLike} style={{ backgroundColor: color }} claces="hover:text-red-500" src="src/assets/React.svg">{Click}</Myicoment>
-                    <Myicoment src="src/assets/Share.svg" name="" />
+                    <Myicoment onMouseOver={handlerColor} absolute inset-0 bg-blue-500 opacity-0 hover:opacity-100 style={{ backgroundColor: color }} src="src/assets/Retweet.svg" name={MyTweet.retweets} />
+                    <Myicoment onClick={handlerLike} absolute inset-0 bg-blue-500 opacity-0 hover:opacity-100 style={{ backgroundColor: color }} claces="hover:text-red-500" src="src/assets/React.svg">{Click}</Myicoment>
+                    <Myicoment absolute inset-0 bg-blue-500 opacity-0 hover:opacity-100 src="src/assets/Share.svg" name="" />
+                    <div class="relative">
+                      <img src="image.png" alt="example" class="w-full" />
+                     <div class="absolute inset-0 bg-blue-500 opacity-0 hover:opacity-100"></div>
+                </div>
                 </div>
             </div>
         </div>
