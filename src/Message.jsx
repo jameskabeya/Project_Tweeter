@@ -1,7 +1,11 @@
 import Who_Follow from "./Whoto_Follow"
+import HomeBack from "./HomeBack"
 export default function Message() {
     return (
         <div className="w-1/3 text-white border-x border-b border-slate-800">
+            <div>
+                <HomeBack to='/'/>
+            </div>
             <div className="flex justify-between p-3 mt-5">
                 <p><strong>Messages</strong></p>
                 <div className="flex gap-2">

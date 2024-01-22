@@ -1,10 +1,12 @@
-import Homeline from "./Homeline"
+import HomeBack from "./HomeBack"
+import Allimage from "./Allimage"
 import Who_Follow from "./Whoto_Follow"
+import { Link } from "react-router-dom"
 export default function Profil(props) {
     return (
         <div className="w-1/3 text-white border-x border-slate-800 border-b">
             <div>
-
+                <HomeBack to='/' />
             </div>
             <div>
                 <img className="h-80 w-full" src="src/assets/Code.jpeg" alt="" />
@@ -72,11 +74,14 @@ export default function Profil(props) {
                 </div>
             </div>
             <div>
-                <div className="flex p-3 gap-2">
-                    <img src="src/assets/Profile-Fill.svg" alt="" />
-                    <small>Lorem ipsum dolor sit amet.</small>
-                </div>
-                <Who_Follow src="src/assets/dan.jpeg" name="HORIZON 24" names="Horizon_24" paraph="compte profesionnel du site informatique Generale en R D Congo et dans le monde. Horizon_24 l'information c'est chaque jour"/>
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
+                <Who_Follow src="src/assets/Profile-Photo(2).svg" name="HORIZON 24" names="Horizon_24" />
             </div>
         </div>
 
