@@ -1,8 +1,10 @@
 export default function Myicoment(props) {
     return (<div className="flex">
-        <img onClick={props.onClick} className={props.claces} src={props.src} alt={props.alt} />
         {props.children}
-        <small htmlFor={props.id}>{props.name}</small>
+        <svg width="24" onClick={props.onClick} className={props.claces} height="24" viewBox={props.viewBoxIcon} fill="none" xmlns="http://www.w3.org/2000/svg">
+            {props.children}
+        </svg>
+        <small >{props.name}</small>
     </div>
     )
 }

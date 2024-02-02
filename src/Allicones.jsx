@@ -1,5 +1,6 @@
-export default function All_icones (props) {
+export default function All_icones(props) {
     return (<>
-               <img className="text" src={props.src} alt={props.alt} />
-            </>
-    )}
+        <img id={props.id} src={props.src} alt={props.alt} />
+    </>
+    )
+}
