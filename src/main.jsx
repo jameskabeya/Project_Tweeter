@@ -10,9 +10,15 @@ import Siderbar from './Siderbar.jsx'
 import Trendline from './Trendline.jsx'
 import Homeline from './Homeline.jsx'
 import Message from './Message.jsx'
+import LogInAuth from './LogInAuth.jsx'
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
+    path: "/login",
+    element: <><LogInAuth /></>
+  },
+  {
+    //   
     path: "/",
     element: <div className='flex justify-center m-auto'><Siderbar /><Outlet /><Trendline /></div>,
     children: [

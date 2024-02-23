@@ -22,6 +22,7 @@ import Homeline from './Homeline'
 import { useState } from 'react'
 import axios from 'axios'
 import { useEffect } from 'react'
+import logIn_Auth from './LogInAuth'
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
   }, [])
 
   return (
+    // <div>
+    //   <logIn_Auth />
+    // </div>
 
     <div className='border-x w-1/3 border-slate-800'>
       <div>
